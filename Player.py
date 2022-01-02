@@ -26,3 +26,4 @@ class Player:
             self.angle -= 0.02
         if keys[pygame.K_q]:
             self.angle += 0.02
+
