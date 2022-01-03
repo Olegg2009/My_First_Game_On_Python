@@ -16,11 +16,14 @@ player_angle = 0
 player_speed = 2
 
 # ray crasting settings
-FOV = 3.
+FOV = math.pi / 3
 HALF_FOV = FOV / 2
 NUM_RAYS = 120
 MAX_DEPTH = 800
 DELTA_ANGLE = FOV / NUM_RAYS
+DIST = NUM_RAYS / (2 * math.tan(HALF_FOV))
+PROJ_COEFF = 3 * DIST * TILE
+SCALE = WIDTH // NUM_RAYS
 
 # colors
 WHITE = (255, 255, 255)
@@ -30,3 +33,4 @@ GREEN = (0, 220, 0)
 BLUE = (0, 0, 220)
 DARKGRAY = (110, 110, 110)
 PURPLE = (120, 120, 120)
+SKY =(0, 186, 255)

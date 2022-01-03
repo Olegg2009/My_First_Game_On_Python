@@ -2,12 +2,12 @@ from Settings import *
 
 text_map = [
     'WWWWWWWWWWWW',
-    'W...WWW....W',
-    'WWW........W',
-    'W..WW...WWWW',
-    'W..........W',
-    'W.WW.WW....W',
-    'W..........W',
+    'W....W.....W',
+    'W.W..W..W..W',
+    'W....W.....W',
+    'W......W...W',
+    'W..W.W.W...W',
+    'W..W.......W',
     'WWWWWWWWWWWW'
 ]
 

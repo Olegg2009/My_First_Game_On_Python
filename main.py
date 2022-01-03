@@ -19,14 +19,16 @@ while True:
     player.movement()
     sc.fill(BLACK)
 
+    pygame.draw.rect(sc, SKY, (0, 0, WIDTH, HALF_HEIGHT))
+    pygame.draw.rect(sc, DARKGRAY, (0, HALF_HEIGHT, WIDTH, HALF_HEIGHT))
+
     ray_casting.ray_crasting(sc, player.pos, player.angle)
 
-    pygame.draw.circle(sc, GREEN, player.pos, 12)
-    pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
-                                             player.y + WIDTH * math.sin(player.angle)))
-    for x, y in world_map:
-        pygame.draw.rect(sc, DARKGRAY, (x, y, TILE, TILE), 2)
+    # pygame.draw.circle(sc, GREEN, player.pos, 12)
+    # pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
+    #                                         player.y + WIDTH * math.sin(player.angle)))
+    # for x, y in world_map:
+    #    pygame.draw.rect(sc, DARKGRAY, (x, y, TILE, TILE), 2)
 
     pygame.display.flip()
     clock.tick(FPS)
-
