@@ -16,7 +16,7 @@ player_angle = 0
 player_speed = 2
 
 # ray crasting settings
-FOV = math.pi
+FOV = 3.
 HALF_FOV = FOV / 2
 NUM_RAYS = 120
 MAX_DEPTH = 800
