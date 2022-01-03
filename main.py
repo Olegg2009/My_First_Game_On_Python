@@ -16,8 +16,8 @@ while True:
     sc.fill(BLACK)
 
     pygame.draw.circle(sc, GREEN, player.pos, 12)
-    pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH + math.cos(player.angle),
-                                             player.y + WIDTH + math.sin(player.angle)))
+    pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
+                                             player.y + WIDTH * math.sin(player.angle)))
 
     pygame.display.flip()
     clock.tick(FPS)
